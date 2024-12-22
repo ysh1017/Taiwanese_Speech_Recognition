@@ -18,8 +18,8 @@ Public Score: 25.27184
 2. 使用 cool-whisper
 
 [查看 cool-whisper 的 Notebook](https://github.com/Machine-Learning-NYCU/3-taiwanese-speech-recognition-ML111701049/blob/main/cool_whisper_%E9%96%A9%E5%8D%97%E8%AA%9E.ipynb)
-Public Score: 16.31067
-![image](https://github.com/user-attachments/assets/8b2a9c7f-44de-4a02-b031-58b6a92199c4)
 
 * 同樣資料清理：移除數字、問號、逗號、聲調、連字號 
 ![image](https://github.com/user-attachments/assets/d142ea13-0892-41a9-a260-807196c08589)
+Public Score: 16.31067
+![image](https://github.com/user-attachments/assets/8b2a9c7f-44de-4a02-b031-58b6a92199c4)
