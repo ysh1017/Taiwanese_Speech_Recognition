@@ -6,6 +6,7 @@
 [查看 Task 1 的 Notebook](https://github.com/Machine-Learning-NYCU/3-taiwanese-speech-recognition-ML111701049/blob/main/(V6)Task_1_Recurrent_Neural_Networks.ipynb)
 
 ![image](https://github.com/user-attachments/assets/f38dfa84-1477-46e5-a7f3-db6827adf5e6)
+
 成績：不佳
 
 ## Task #3 - Whisper
@@ -30,3 +31,6 @@ Public Score: 16.31067
 
 3. OpenAI Whisper Fine-tuning
 以cool-whisper作為baseline
+
+[查看 Fine-tuning 的 Notebook](https://github.com/Machine-Learning-NYCU/3-taiwanese-speech-recognition-ML111701049/blob/main/V2_fine_tune_whisper.ipynb)
+
