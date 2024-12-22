@@ -8,4 +8,9 @@
 
 ## Task #3 - Whisper
 1. 使用 Whisper large-v3
-2. 使用 cool-whisper 
+* 資料清理：移除數字、問號、逗號、聲調、連字號 
+![image](https://github.com/user-attachments/assets/168e0275-3e34-4582-aba7-3bbe85a7f546)
+
+2. 使用 cool-whisper
+* 同樣資料清理：移除數字、問號、逗號、聲調、連字號 
+![image](https://github.com/user-attachments/assets/d142ea13-0892-41a9-a260-807196c08589)
