@@ -83,9 +83,6 @@
    * `cool-whisper` 是一個基於 Whisper 蒸餾而成的模型，主要針對在國語-英文語碼轉換 ASR進行優化。
    * 該模型使用了 6 萬小時的未標註音訊進行訓練，利用了 `Whisper-large-v2` 和 `Whisper-base` 的知識。
    * [查看 cool-whisper 的 Notebook](https://github.com/Machine-Learning-NYCU/3-taiwanese-speech-recognition-ML111701049/blob/main/cool_whisper_%E9%96%A9%E5%8D%97%E8%AA%9E.ipynb)
-    
-   **驗證集表現**: `Wer` = 8.877381
-   * ![image](https://github.com/user-attachments/assets/c009c3e1-6389-4b05-8991-e0fd02fc4738)
    * **資料清理**: 沿用與 `Whisper large-v3` 相同的資料清理步驟 (移除數字、問號、逗號、聲調符號和連字號)。
    * ![cool-whisper 資料清理流程](https://github.com/user-attachments/assets/d142ea13-0892-41a9-a260-807196c08589)
    * **Public Score**: 16.31067
@@ -93,6 +90,8 @@
 
 3. **OpenAI Whisper 微調 (Fine-tuning)**:
    * 我們以 `small` 作為基礎模型 (baseline) 進行微調。
+   * **驗證集表現**: `Wer` = 8.877381
+   * ![image](https://github.com/user-attachments/assets/c009c3e1-6389-4b05-8991-e0fd02fc4738)
    * [查看 Fine-tuning 的 Notebook](https://github.com/Machine-Learning-NYCU/3-taiwanese-speech-recognition-ML111701049/blob/main/V2_fine_tune_whisper.ipynb)
    * **Private Score**: 2.21399
    ![image](https://github.com/user-attachments/assets/b0729662-a1c0-4a72-a58a-bad5a92ff93d)
