@@ -80,7 +80,7 @@
    * ![Whisper large-v3 Public Score](https://github.com/user-attachments/assets/e0ae3091-7458-4e9b-b01d-76f63eff1563)
 
 2. **使用 cool-whisper**:
-   * `cool-whisper` 是一個基於 Whisper 蒸餾而成的模型，主要針對在台灣使用閩南語和英語程式碼切換的語音辨識場景進行優化。
+   * `cool-whisper` 是一個基於 Whisper 蒸餾而成的模型，主要針對在國語-英文語碼轉換 ASR進行優化。
    * 該模型使用了 6 萬小時的未標註音訊進行訓練，利用了 `Whisper-large-v2` 和 `Whisper-base` 的知識。
    * [查看 cool-whisper 的 Notebook](https://github.com/Machine-Learning-NYCU/3-taiwanese-speech-recognition-ML111701049/blob/main/cool_whisper_%E9%96%A9%E5%8D%97%E8%AA%9E.ipynb)
    * **資料清理**: 沿用與 `Whisper large-v3` 相同的資料清理步驟 (移除數字、問號、逗號、聲調符號和連字號)。
