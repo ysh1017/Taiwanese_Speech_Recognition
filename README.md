@@ -86,7 +86,7 @@
    * **資料清理**: 沿用與 `Whisper large-v3` 相同的資料清理步驟 (移除數字、問號、逗號、聲調符號和連字號)。
    * ![cool-whisper 資料清理流程](https://github.com/user-attachments/assets/d142ea13-0892-41a9-a260-807196c08589)
    * **Public Score**: 16.31067
-   * ![cool-whisper Public Score](https://github.com/user-attachments/assets/8b2a9c7f-44de-4a02-b01d-58b6a92199c4)
+   * ![cool-whisper Public Score](https://github.com/user-attachments/assets/8b2a9c7f-44de-4a02-b031-58b6a92199c4)
 
 3. **OpenAI Whisper 微調 (Fine-tuning)**:
    * 我們以 `cool-whisper` 作為基礎模型 (baseline) 進行微調。
