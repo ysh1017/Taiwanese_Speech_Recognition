@@ -91,6 +91,8 @@
 3. **OpenAI Whisper 微調 (Fine-tuning)**:
    * 我們以 `cool-whisper` 作為基礎模型 (baseline) 進行微調。
    * [查看 Fine-tuning 的 Notebook](https://github.com/Machine-Learning-NYCU/3-taiwanese-speech-recognition-ML111701049/blob/main/V2_fine_tune_whisper.ipynb)
+   * **Private Score**: 2.21399
+   ![image](https://github.com/user-attachments/assets/b0729662-a1c0-4a72-a58a-bad5a92ff93d)
 
    * **與學術研究的比較**: 我們的微調實驗與近期一些學術研究方向相似，皆著重於客製化 Whisper 模型以提升台語辨識效能。例如，謝岳che、呂克明和呂仁園在 **ROCLING 2023** 會議上發表的論文[〈**運用基於生成預訓練轉換器架構的 OpenAI Whisper 多語言語音辨識引擎之台語及華語語音辨識之實作**〉](https://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=2XiMMk/search?s=id=%22111CGU05392012%22.&openfull=1&setcurrent=0)中，也探討了對 Whisper 模型進行微調以辨識台語和華語的可能性。
 
