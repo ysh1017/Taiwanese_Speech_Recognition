@@ -17,9 +17,16 @@ Public Score: 25.27184
 
 2. 使用 cool-whisper
 
+* Cool-whisper is a distilled version of Whisper, mainly focused on Mandarin-English code-switching ASR for people in Taiwan.
+* Use 60,000 hours of unlabeled audio to train the model.
+* Practically, we utilize knowledge not only from the large model (Whisper-large-v2) but also from the small model (Whisper-base).
+
 [查看 cool-whisper 的 Notebook](https://github.com/Machine-Learning-NYCU/3-taiwanese-speech-recognition-ML111701049/blob/main/cool_whisper_%E9%96%A9%E5%8D%97%E8%AA%9E.ipynb)
 
 * 同樣資料清理：移除數字、問號、逗號、聲調、連字號 
 ![image](https://github.com/user-attachments/assets/d142ea13-0892-41a9-a260-807196c08589)
 Public Score: 16.31067
 ![image](https://github.com/user-attachments/assets/8b2a9c7f-44de-4a02-b031-58b6a92199c4)
+
+3. OpenAI Whisper Fine-tuning
+以cool-whisper作為baseline
