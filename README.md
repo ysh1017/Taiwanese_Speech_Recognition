@@ -89,7 +89,7 @@
    * ![cool-whisper Public Score](https://github.com/user-attachments/assets/8b2a9c7f-44de-4a02-b031-58b6a92199c4)
 
 3. **OpenAI Whisper 微調 (Fine-tuning)**:
-   * 我們以 `cool-whisper` 作為基礎模型 (baseline) 進行微調。
+   * 我們以 `small` 作為基礎模型 (baseline) 進行微調。
    * [查看 Fine-tuning 的 Notebook](https://github.com/Machine-Learning-NYCU/3-taiwanese-speech-recognition-ML111701049/blob/main/V2_fine_tune_whisper.ipynb)
    * **Private Score**: 2.21399
    ![image](https://github.com/user-attachments/assets/b0729662-a1c0-4a72-a58a-bad5a92ff93d)
