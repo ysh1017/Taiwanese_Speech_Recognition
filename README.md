@@ -18,13 +18,13 @@
 * **檔案**: `train-toneless.csv` (提供音檔對應的羅馬字轉寫文本，不包含聲調)。
 * **範例 (`train-toneless.csv`)**:
 
-```
+
 | id | text                                           |
 |----|------------------------------------------------|
 | 1  | li be e mih kiann lan lan san san long be tsiau tsng |
 | 2  | suah ka li tim tioh                           |
 | 3  | kiu lang ooh                                  |
-```
+
 
 ### 驗證資料
 
