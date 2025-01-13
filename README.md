@@ -1,3 +1,6 @@
+> TO: 老師
+> 我最後成功取得 `Private Score: 2.21399` 可惜超過時間變成late submission 未被記入分數，只拿到`Private Score: 13.00000`，希望有機會在報告斟酌加分~~
+
 # Taiwanese Speech Recognition
 
 ## 專案簡介
