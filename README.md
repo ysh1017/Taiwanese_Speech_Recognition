@@ -1,9 +1,3 @@
-# TO: 老師
-## 我最後成功取得 `Private Score = 2.21399` 可惜超過時間變成late submission未被記入分數，只拿到`Private Score = 13.00000`，希望有機會在報告斟酌加分QQ
-
-![image](https://github.com/user-attachments/assets/698b7df0-b6dc-4ddd-a39d-61bfe959e38e)
-![image](https://github.com/user-attachments/assets/1d55db26-9cfb-4b1f-a1aa-bf543b31a6a6)
-
 # Taiwanese Speech Recognition
 
 ## 專案簡介
@@ -69,38 +63,40 @@
 ### 任務一：循環神經網路 (Recurrent Neural Networks)
 
 * 我們嘗試了使用 RNN 來建立語音辨識模型。
-* [查看 Task 1 的 Notebook](https://github.com/Machine-Learning-NYCU/3-taiwanese-speech-recognition-ML111701049/blob/main/(V6)Task_1_Recurrent_Neural_Networks.ipynb)
+* [查看 Task 1 的 Notebook](https://github.com/ysh1017/Taiwanese_Speech_Recognition/blob/main/(V6)Task_1_Recurrent_Neural_Networks.ipynb)
 * **成績**: 不佳
 
-![Task 1 模型結構示意圖](https://github.com/user-attachments/assets/f38dfa84-1477-46e5-a7f3-db6827adf5e6)
+![Task 1 模型結構示意圖](https://github.com/user-attachments/assets/c71b710a-497e-4e88-8209-2622709f340c)
 
 ### 任務三：使用 Whisper 模型
 
-本部分探索了基於 Transformer 的預訓練模型 Whisper 在台灣閩南語語音辨識上的應用。 近期有許多研究也關注於利用 Whisper 模型進行台語語音辨識的研究。
+本部分探索了基於 Transformer 的預訓練模型 Whisper 在台灣閩南語語音辨識上的應用。近期有許多研究也關注於利用 Whisper 模型進行台語語音辨識的研究。
 
 1. **使用 Whisper large-v3**:
    * 我們直接使用了 OpenAI 提供的 `large-v3` 模型。
    * **資料清理**: 我們對訓練文本進行了初步清理，移除了數字、問號、逗號、聲調符號和連字號。
-   * ![Whisper large-v3 資料清理流程](https://github.com/user-attachments/assets/168e0275-3e34-4582-aba7-3bbe85a7f546)
+    ![image](https://github.com/user-attachments/assets/679520ed-134c-4163-b156-0abd3f546211)
    * **Public Score**: 25.27184
-   * ![Whisper large-v3 Public Score](https://github.com/user-attachments/assets/e0ae3091-7458-4e9b-b01d-76f63eff1563)
+    ![Whisper large-v3 Public Score](https://github.com/user-attachments/assets/f25ba924-3665-4b8f-996e-4777968b68c6)
 
 2. **使用 cool-whisper**:
    * `cool-whisper` 是一個基於 Whisper 蒸餾而成的模型，主要針對在國語-英文語碼轉換 ASR進行優化。
    * 該模型使用了 6 萬小時的未標註音訊進行訓練，利用了 `Whisper-large-v2` 和 `Whisper-base` 的知識。
-   * [查看 cool-whisper 的 Notebook](https://github.com/Machine-Learning-NYCU/3-taiwanese-speech-recognition-ML111701049/blob/main/cool_whisper_%E9%96%A9%E5%8D%97%E8%AA%9E.ipynb)
+   * [查看 cool-whisper 的 Notebook](https://github.com/user-attachments/assets/3dc7af53-eb47-4772-b94d-bb3c0713c8b5)
    * **資料清理**: 沿用與 `Whisper large-v3` 相同的資料清理步驟 (移除數字、問號、逗號、聲調符號和連字號)。
-   * ![cool-whisper 資料清理流程](https://github.com/user-attachments/assets/d142ea13-0892-41a9-a260-807196c08589)
+    ![image](https://github.com/user-attachments/assets/ae0c3fc2-158f-465c-9eaa-9c35fc1fc5b8)
    * **Public Score**: 16.31067
-   * ![cool-whisper Public Score](https://github.com/user-attachments/assets/8b2a9c7f-44de-4a02-b031-58b6a92199c4)
+    ![cool-whisper Public Score](https://github.com/user-attachments/assets/ca267e32-d2a5-4280-b96c-685c6a404d3c)
 
 3. **OpenAI Whisper 微調 (Fine-tuning)**:
    * 我們以 `small` 作為基礎模型 (baseline) 進行微調。
    * **驗證集表現**: `Wer` = 8.877381
-   * ![image](https://github.com/user-attachments/assets/c009c3e1-6389-4b05-8991-e0fd02fc4738)
-   * [查看 Fine-tuning 的 Notebook](https://github.com/Machine-Learning-NYCU/3-taiwanese-speech-recognition-ML111701049/blob/main/V2_fine_tune_whisper.ipynb)
+   
+    ![image](https://github.com/user-attachments/assets/a8ade0ba-7bda-4f75-9376-d3f3943a0140)
+   * [查看 Fine-tuning 的 Notebook](https://github.com/ysh1017/Taiwanese_Speech_Recognition/blob/main/V2_fine_tune_whisper.ipynb)
    * **Private Score**: 2.21399
-   ![image](https://github.com/user-attachments/assets/b0729662-a1c0-4a72-a58a-bad5a92ff93d)
+   ![image](https://github.com/user-attachments/assets/e6f5fd85-c402-414f-9768-eec4b29f4494)
+
 
    * **與學術研究的比較**: 我們的微調實驗與近期一些學術研究方向相似，皆著重於客製化 Whisper 模型以提升台語辨識效能。例如，謝岳che、呂克明和呂仁園在 **ROCLING 2023** 會議上發表的論文[〈**運用基於生成預訓練轉換器架構的 OpenAI Whisper 多語言語音辨識引擎之台語及華語語音辨識之實作**〉](https://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=2XiMMk/search?s=id=%22111CGU05392012%22.&openfull=1&setcurrent=0)中，也探討了對 Whisper 模型進行微調以辨識台語和華語的可能性。
 
@@ -112,7 +108,9 @@
 
 ## 結論與未來方向
 
-* 最後成功取得 **Private Score**: 2.21399 可惜超過時間 未被記入
+* 最後成功取得 **Private Score**: 2.21399
+    ![image](https://github.com/user-attachments/assets/f07e90ec-0d91-4aa2-8675-f2e7d811878a)
+
 * 透過實驗，我們發現基於 Transformer 的 Whisper 模型在台灣閩南語語音辨識任務上展現了較好的效能，特別是 `cool-whisper` 作為針對台灣口音優化的模型，取得了明顯的進展。
 * 我們也借鑒了學術研究的經驗，理解到台語語音辨識仍面臨資料量、評估指標等多方面的挑戰。如同謝岳che 等人的研究指出，台語語音與華語文字的轉換具有複雜性，且現有資源的限制也影響了模型的效能。
 * 後續可以嘗試以下方向：
