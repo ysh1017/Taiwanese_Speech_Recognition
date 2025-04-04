@@ -50,7 +50,7 @@
 
 2. **Kaggle 評分指標**:
    - 由於 Kaggle 的限制，評分基於**字元級的平均 Levenshtein 距離**計算。
-   - 公式: \( \text{LevDistance} = \text{插入} + \text{刪除} + \text{替換} \)
+   - 公式：LevDistance = 插入次數 + 刪除次數 + 替換次數
    - **注意**: 對於語音轉寫任務而言，**詞錯誤率 (WER)** 通常是更合適的評估指標。
 
 ## 使用資源
